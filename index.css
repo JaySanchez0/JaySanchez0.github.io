@@ -42,15 +42,15 @@
 
 .about{
     width: 90%;
-    height: 250px;
+    height: auto;
     background: darkcyan;
     border-radius: 10px;
     color: white;
-    padding:4px 4px 4px 4px;
+    padding:8px 4px 8px 4px;
     line-height: 24px;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .tecnologias{
@@ -67,6 +67,67 @@
     border-radius: 10px;
     color: white;
     padding:4px 4px 15px 4px;
+}
+
+.projects{
+    width: 90%;
+    height: auto;
+    color: white;
+    background: darkcyan;
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+}
+
+.projects > div{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    overflow-x: scroll;
+}
+
+.projects > div >.project{
+    width: 500px;
+    height: 480px;
+    display: block;
+    text-align: left;
+    color: black;
+    display: block;
+}
+.projects > div > .project > div{
+    width: 450px;
+    height: 450px;
+    background: rgb(1, 102, 102);
+    border-radius: 10px;
+    display: block;
+    text-align: left;
+    color: black;
+    color: white;
+    margin: 0px 30px 30px 30px;
+    padding:10px 3px 3px 10px;
+}
+.end{
+    width: 90%;
+    height: auto;
+    color: white;
+    background: darkcyan;
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    border-radius: 40px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background: rgb(4, 73, 73);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
 }
 
 @media only screen and (max-width: 600px){
@@ -90,15 +151,9 @@
         padding-bottom: 20px;
     }
 
-    .about{
-        background: rgb(3, 167, 167);
-    }
-    .tecnologias{
+    .about , .tecnologias, .experiencia, .projects{
         background: rgb(3, 167, 167);
     }
 
-    .experiencia{
-        background: rgb(3, 167, 167);
-    }
 
   }
